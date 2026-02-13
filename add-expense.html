@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Expense - TripSplitter</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+<div class="dashboard-container">
+    <h1>Add Expense</h1>
+
+    <div class="summary-card">
+        <form id="expenseForm">
+
+            <input type="number" id="amount" placeholder="Amount" required>
+
+            <select id="paidBy" required>
+                <option value="">Paid By</option>
+                <option>Alice</option>
+                <option>Bob</option>
+                <option>Charlie</option>
+            </select>
+
+            <select id="category" required>
+                <option value="">Category</option>
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Hotel</option>
+            </select>
+
+            <button type="submit">Add Expense</button>
+        </form>
+    </div>
+</div>
+
+<script>
+document.getElementById("expenseForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let amount = parseFloat(document.getElementById("amount").value);
+
+    let currentTotal = localStorage.getItem("totalSpent");
+    currentTotal = currentTotal ? parseFloat(currentTotal) : 1250;
+
+    let newTotal = currentTotal + amount;
+
+    localStorage.setItem("totalSpent", newTotal);
+
+    window.location.href = "home.html";
+});
+</script>
+
+</body>
+</html>
