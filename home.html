@@ -17,7 +17,7 @@
 
     <div class="summary-card">
         <h2>Total Spent</h2>
-        <p class="amount">$1,250</p>
+        <p class="amount" id="totalDisplay">$1,250</p>
     </div>
 
     <div class="summary-card">
@@ -30,13 +30,19 @@
 </div>
 
     <div class="nav-buttons">
-        <a href="#"><button>Add Expense</button></a>
+        <a href="add-expense.html"><button>Add Expense</button></a>
         <a href="#"><button>Balances</button></a>
         <a href="#"><button>Activity Map</button></a>
         <a href="#"><button>Export Report</button></a>
     </div>
 
 </div>
+<script>
+let storedTotal = localStorage.getItem("totalSpent");
+if (storedTotal) {
+    document.getElementById("totalDisplay").innerText = "$" + parseFloat(storedTotal).toLocaleString();
+}
+</script>
 
 </body>
 </html>
