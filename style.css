@@ -148,3 +148,23 @@ button:hover {
         flex-direction: column;
     }
 }
+/*ABOUT BUTTON*/
+
+.about-btn {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background: white;
+    color: #0f9b8e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #0f9b8e;
+    color: white;
+}
