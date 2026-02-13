@@ -48,20 +48,20 @@ input:focus {
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    background: #0f9b8e;
-    color: white;
+    background: white;
+    color: #0f9b8e;
     border: none;
-    border-radius: 8px;
-    font-size: 15px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 500;
     cursor: pointer;
-    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     transition: 0.3s;
 }
 
 button:hover {
-    background: #0c7c72;
+    background: #0f9b8e;
+    color: white;
 }
 
 .footer {
@@ -122,11 +122,13 @@ button:hover {
 }
 
 .nav-buttons {
-    margin-top: 20px;
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .nav-buttons button {
-    margin: 8px;
     padding: 10px 18px;
 }
 .summary-row {
