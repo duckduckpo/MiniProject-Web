@@ -78,3 +78,54 @@ button:hover {
 .footer a:hover {
     text-decoration: underline;
 }
+/* DASHBOARD PAGE STYLES */
+
+.dashboard-body {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.dashboard-container h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f9b8e;
+}
+
+.chart-placeholder {
+    height: 150px;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    border-radius: 8px;
+}
+
+.nav-buttons {
+    margin-top: 20px;
+}
+
+.nav-buttons button {
+    margin: 8px;
+    padding: 10px 18px;
+}
